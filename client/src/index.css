@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Expletus Sans';
+  src: url('./ExpletusSans-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Global Styles */
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #1fa398;
+  --danger-color: #dc3545;
+  --success-color: #177e6b;
+  --login-color: #923e69;
+  --warning-color: #eebd35;
+}
+
+body {
+  background: #111;
+  height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: 'Expletus Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+body:after {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  pointer-events: none;
+  transform: rotate(70deg);
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+}
+
+body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 45px;
+  border-radius: 50%;
+  left: 14%;
+  top: -5px;
+  box-shadow: 0 0 6px 4px #fff;
+}
+
+.auth_form {
+  /* background: #111; */
+  width: 400px;
+  border-radius: 0.4em;
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+/* .auth_form:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  left: 40%;
+  background: linear-gradient(to left, #111, #444, #b6b6b8, #444, #111);
+  top: 0;
+}
+
+.auth_form:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  left: 34%;
+  top: -7px;
+  box-shadow: 0 0 6px 4px #fff;
+} */
+
+.auth_form h1 {
+  font-size: 35px;
+  text-shadow: 0 1px 0 black;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+}
+
+.auth_form_item {
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.auth_form_item h6 {
+  font-size: 15px;
+  text-shadow: 0 1px 0 black;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  position: relative;
+  margin-top: -15px;
+  margin-right: 10px;
+}
+
+/* Add a CSS class for required fields */
+.required-field::before {
+  content: '*';
+  color: red; /* Customize the color as needed */
+  margin-right: 4px; /* Adjust the spacing between the asterisk and label */
+}
+
+/* Apply the CSS class to the labels of required fields */
+.auth_form_item label.required-label {
+  display: flex;
+  align-items: center; /* Center the asterisk vertically with the label */
+}
+
+/* Adjust the alignment and spacing of the input fields */
+.auth_form_item .ant-form-item-control {
+  flex: 1; /* Allow input fields to grow and take available space */
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none !important;
+}
+
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-warning,
+.alert-warning {
+  background: var(--warning-color);
+  color: #fff;
+}
+
+.btn-primary,
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-light,
+.alert-light {
+  background: var(--light-color);
+  color: #fff;
+}
+
+.btn-dark,
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.btn-success,
+.alert-success,
+active {
+  background: var(--success-color);
+  color: #fff;
+}
+
+
+/* .auth_form h1:after {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  pointer-events: none;
+  transform: rotate(70deg);
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+} */
+
+.text-white {
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  50% {
+    background-position: 100% 30%;
+  }
+
+  100% {
+    background-position: 0% 30%;
+  }
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.fw-500 {
+  font-weight: 700;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .auth_form {
+    width: 320px;
+  }
+}

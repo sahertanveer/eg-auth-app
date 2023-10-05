@@ -1,0 +1,61 @@
+// {
+//   "compilerOptions": {
+//     "target": "ES2021",
+//     "module": "commonjs",
+//     "outDir": "./dist",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true, // Enable strict type checking for backend code
+//     "forceConsistentCasingInFileNames": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "declaration": true,
+//     "removeComments": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "moduleResolution": "node",
+//     "sourceMap": true,
+//     "baseUrl": "./",
+//     "incremental": true,
+//     "resolveJsonModule": true,
+//     "strictNullChecks": false,
+//     "noImplicitAny": false,
+//     "strictBindCallApply": false,
+//     "isolatedModules": true,
+//     "noEmit": true, // Don't generate JavaScript files
+//     "jsx": "react-jsx" // If you're not using React on the backend, you can remove this line
+//   },
+//   "include": [
+//     "src/**/*.ts",
+//     "src/**/*.tsx"
+//   ]
+// }
+
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}
